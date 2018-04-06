@@ -1,6 +1,20 @@
-.box {
+.ball {
   background-color: #0799d3;
   width: 100px;
-  height: 100px;
+  height: 0px;
   border-radius: 50%;
+  animation-name: jump;
+  animation-fill-mode: forward;
+  animation-duration: 1/2s;
+  animation-times-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  
 }
+@keyframe jump{
+  from {
+    height: 0px;
+    }
+  to  {
+    height: 100px
+      }
